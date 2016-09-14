@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?nmm7r5");
+  src: url("../fonts/icomoon.eot?nmm7r5#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?nmm7r5") format("truetype"), url("../fonts/icomoon.woff?nmm7r5") format("woff"), url("../fonts/icomoon.svg?nmm7r5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-birthday-cake:before {
+  content: "\e901";
+  font-size: 28px;
+  animation-name: ico-color;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@font-face {
+  font-family: "Beach";
+  src: url("../fonts/Beach.otf"); }
+.audio {
+  display: none; }
+
+body {
+  animation-name: back-color;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  font-family: "Beach";
+  text-align: center;
+  margin: 0 auto;
+  padding: 0; }
+
+.header {
+  font-size: 28px; }
+
+@keyframes back-color {
+  0% {
+    background: #A34BE8; }
+  10% {
+    background: #187FFF; }
+  20% {
+    background: #DB8B3A; }
+  30% {
+    background: #FF3E4C; }
+  40% {
+    background: #DBC06F; }
+  50% {
+    background: #B3FFBD; }
+  60% {
+    background: #8FD95D; }
+  70% {
+    background: #9283E8; }
+  80% {
+    background: #D4C07F; }
+  90% {
+    background: #62CEE8; }
+  100% {
+    background: #FFF9D4; } }
+@keyframes ico-color {
+  0% {
+    color: #FFF9D4; }
+  10% {
+    color: #DB8B3A; }
+  20% {
+    color: #FF3E4C; }
+  30% {
+    color: #62CEE8; }
+  40% {
+    color: #9283E8; }
+  50% {
+    color: #FF3E4C; }
+  60% {
+    color: #8FD95D; }
+  70% {
+    color: #FFF9D4; }
+  80% {
+    color: #9283E8; }
+  90% {
+    color: #62CEE8; }
+  100% {
+    color: #187FFF; } }
+@keyframes main {
+  0% {
+    transform: skew(-8deg); }
+  15% {
+    transform: skew(-18deg); }
+  30% {
+    transform: skew(-28deg); }
+  45% {
+    transform: skew(0deg); }
+  60% {
+    transform: skew(13deg); }
+  75% {
+    transform: skew(20deg); }
+  90% {
+    transform: skew(30deg); } }
+.main {
+  animation-name: main;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@media screen and (min-width: 500px) {
+  .header {
+    font-size: 36px; }
+
+  .icon-birthday-cake:before {
+    font-size: 36px; } }
+@media screen and (min-width: 600px) {
+  .header {
+    font-size: 44px; }
+
+  .icon-birthday-cake:before {
+    font-size: 44px; } }
+@media screen and (min-width: 750px) {
+  .header {
+    font-size: 52px; }
+
+  .icon-birthday-cake:before {
+    font-size: 52px; } }
+@media screen and (min-width: 999px) {
+  .header {
+    font-size: 65px; }
+
+  .icon-birthday-cake:before {
+    font-size: 65px; } }
+
+/*# sourceMappingURL=style.css.map */
