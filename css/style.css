@@ -4,6 +4,7 @@
   src: url("../fonts/icomoon.eot?nmm7r5#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?nmm7r5") format("truetype"), url("../fonts/icomoon.woff?nmm7r5") format("woff"), url("../fonts/icomoon.svg?nmm7r5#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -20,21 +21,30 @@
 .icon-birthday-cake:before {
   content: "\e901";
   font-size: 28px;
+  -webkit-animation-name: ico-color;
   animation-name: ico-color;
+  -webkit-animation-duration: 15s;
   animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
 @font-face {
   font-family: "Beach";
   src: url("../fonts/Beach.otf"); }
+
 .audio {
   display: none; }
 
 body {
+  -webkit-animation-name: back-color;
   animation-name: back-color;
+  -webkit-animation-duration: 15s;
   animation-duration: 15s;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   font-family: "Beach";
   text-align: center;
@@ -43,6 +53,34 @@ body {
 
 .header {
   font-size: 28px; }
+
+.gif {
+  display: none;
+  margin: 0 auto; }
+
+@-webkit-keyframes back-color {
+  0% {
+    background: #A34BE8; }
+  10% {
+    background: #187FFF; }
+  20% {
+    background: #DB8B3A; }
+  30% {
+    background: #FF3E4C; }
+  40% {
+    background: #DBC06F; }
+  50% {
+    background: #B3FFBD; }
+  60% {
+    background: #8FD95D; }
+  70% {
+    background: #9283E8; }
+  80% {
+    background: #D4C07F; }
+  90% {
+    background: #62CEE8; }
+  100% {
+    background: #FFF9D4; } }
 
 @keyframes back-color {
   0% {
@@ -67,6 +105,31 @@ body {
     background: #62CEE8; }
   100% {
     background: #FFF9D4; } }
+
+@-webkit-keyframes ico-color {
+  0% {
+    color: #FFF9D4; }
+  10% {
+    color: #DB8B3A; }
+  20% {
+    color: #FF3E4C; }
+  30% {
+    color: #62CEE8; }
+  40% {
+    color: #9283E8; }
+  50% {
+    color: #FF3E4C; }
+  60% {
+    color: #8FD95D; }
+  70% {
+    color: #FFF9D4; }
+  80% {
+    color: #9283E8; }
+  90% {
+    color: #62CEE8; }
+  100% {
+    color: #187FFF; } }
+
 @keyframes ico-color {
   0% {
     color: #FFF9D4; }
@@ -90,50 +153,83 @@ body {
     color: #62CEE8; }
   100% {
     color: #187FFF; } }
-@keyframes main {
+
+@-webkit-keyframes main {
   0% {
+    -webkit-transform: skew(-8deg);
     transform: skew(-8deg); }
   15% {
+    -webkit-transform: skew(-18deg);
     transform: skew(-18deg); }
   30% {
+    -webkit-transform: skew(-28deg);
     transform: skew(-28deg); }
   45% {
+    -webkit-transform: skew(0deg);
     transform: skew(0deg); }
   60% {
+    -webkit-transform: skew(13deg);
     transform: skew(13deg); }
   75% {
+    -webkit-transform: skew(20deg);
     transform: skew(20deg); }
   90% {
+    -webkit-transform: skew(30deg);
     transform: skew(30deg); } }
+
+@keyframes main {
+  0% {
+    -webkit-transform: skew(-8deg);
+    transform: skew(-8deg); }
+  15% {
+    -webkit-transform: skew(-18deg);
+    transform: skew(-18deg); }
+  30% {
+    -webkit-transform: skew(-28deg);
+    transform: skew(-28deg); }
+  45% {
+    -webkit-transform: skew(0deg);
+    transform: skew(0deg); }
+  60% {
+    -webkit-transform: skew(13deg);
+    transform: skew(13deg); }
+  75% {
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg); }
+  90% {
+    -webkit-transform: skew(30deg);
+    transform: skew(30deg); } }
+
 .main {
+  -webkit-animation-name: main;
   animation-name: main;
+  -webkit-animation-duration: 8s;
   animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
 @media screen and (min-width: 500px) {
   .header {
     font-size: 36px; }
-
   .icon-birthday-cake:before {
     font-size: 36px; } }
+
 @media screen and (min-width: 600px) {
   .header {
     font-size: 44px; }
-
   .icon-birthday-cake:before {
     font-size: 44px; } }
+
 @media screen and (min-width: 750px) {
   .header {
     font-size: 52px; }
-
   .icon-birthday-cake:before {
     font-size: 52px; } }
+
 @media screen and (min-width: 999px) {
   .header {
     font-size: 65px; }
-
   .icon-birthday-cake:before {
     font-size: 65px; } }
-
-/*# sourceMappingURL=style.css.map */
